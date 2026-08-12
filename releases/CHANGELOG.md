@@ -1,2 +1,0 @@
-- Added "Sap Dirt"
-    - Spawns anywhere replacing dirt like an ore

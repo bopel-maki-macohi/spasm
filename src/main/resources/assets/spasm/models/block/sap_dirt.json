@@ -1,7 +1,0 @@
-{
-  "parent": "block/cube_all",
-  "textures": {
-    "all": "spasm:block/sap_dirt",
-    "particle": "spasm:block/sap_dirt"
-  }
-}

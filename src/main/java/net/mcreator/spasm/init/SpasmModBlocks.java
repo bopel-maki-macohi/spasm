@@ -10,7 +10,6 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.Block;
 
 import net.mcreator.spasm.block.StrippedDirtBlock;
-import net.mcreator.spasm.block.SapDirtBlock;
 import net.mcreator.spasm.SpasmMod;
 
 import java.util.function.Function;
@@ -18,10 +17,8 @@ import java.util.function.Function;
 public class SpasmModBlocks {
 	public static final DeferredRegister.Blocks REGISTRY = DeferredRegister.createBlocks(SpasmMod.MODID);
 	public static final DeferredBlock<Block> STRIPPED_DIRT;
-	public static final DeferredBlock<Block> SAP_DIRT;
 	static {
 		STRIPPED_DIRT = register("stripped_dirt", StrippedDirtBlock::new);
-		SAP_DIRT = register("sap_dirt", SapDirtBlock::new);
 	}
 
 	// Start of user code block custom blocks
