@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "wooden_dirt_shovel",
+    "unlockingItems": [
+      "Items.STICK",
+      "CUSTOM:DirtShovel"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:DirtShovel",
+      "",
+      "",
+      "Items.STICK",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:WoodenDirtShovel",
+    "name": "wooden_dirt_shovel_recipe_alt",
+    "namespace": "mod"
+  }
+}

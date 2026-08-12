@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "wooden_dirt_shovel",
+  "category": "misc",
+  "pattern": [
+    "a",
+    "b"
+  ],
+  "key": {
+    "a": "spasm:dirt_shovel",
+    "b": "minecraft:stick"
+  },
+  "result": {
+    "id": "spasm:wooden_dirt_shovel",
+    "count": 1
+  }
+}

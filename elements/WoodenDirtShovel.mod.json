@@ -5,11 +5,11 @@
     "toolType": "Spade",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "dirt_shovel",
+    "texture": "wooden_dirt_stick",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "Dirt Shovel",
+    "name": "Wooden Dirt Shovel",
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
@@ -17,16 +17,17 @@
     "creativeTabs": [
       "TOOLS"
     ],
-    "efficiency": 15.0,
+    "efficiency": 12.0,
     "attackSpeed": 10.0,
     "enchantability": 1,
     "damageVsEntity": 1.0,
-    "usageCount": 12,
+    "usageCount": 32,
     "glowCondition": {
       "fixedValue": false
     },
     "repairItems": [
-      "CUSTOM:DirtClump"
+      "CUSTOM:DirtClump",
+      "Items.STICK"
     ],
     "immuneToFire": false,
     "blockDropsTier": "WOOD",

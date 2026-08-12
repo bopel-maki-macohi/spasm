@@ -278,6 +278,49 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "WoodenDirtShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_dirt_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/spasm/items/wooden_dirt_shovel.json",
+          "src/main/java/net/mcreator/spasm/item/WoodenDirtShovelItem.java",
+          "src/main/resources/assets/spasm/models/item/wooden_dirt_shovel.json"
+        ]
+      },
+      "path": "~/Wood Age"
+    },
+    {
+      "name": "WoodenDirtShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_dirt_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/wooden_dirt_shovel_recipe.json",
+          "src/main/resources/data/spasm/advancement/recipes/wooden_dirt_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Wood Age"
+    },
+    {
+      "name": "WoodenDirtShovelRecipeAlt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_dirt_shovel_recipe_alt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/wooden_dirt_shovel_recipe_alt.json",
+          "src/main/resources/data/spasm/advancement/recipes/wooden_dirt_shovel_recipe_alt.json"
+        ]
+      },
+      "path": "~/Wood Age"
     }
   ],
   "variable_elements": [],
@@ -305,10 +348,15 @@
       "~DirtHoe@CUSTOM:DirtHoe"
     ],
     "ITEMS:minecraft:shovels": [
+      "~WoodenDirtShovel@CUSTOM:WoodenDirtShovel",
       "~DirtShovel@CUSTOM:DirtShovel"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
       "~DirtContainer@CUSTOM:DirtContainer"
+    ],
+    "ITEMS:spasm:wooden_dirt_shovel_repair_items": [
+      "~WoodenDirtShovel@Items.STICK",
+      "~WoodenDirtShovel@CUSTOM:DirtClump"
     ]
   },
   "tab_element_order": {},
@@ -321,7 +369,8 @@
       "item.spasm.dirt_shovel": "Dirt Shovel",
       "item.spasm.dirt_container": "Dirt Container",
       "gui.spasm.dirt_container_gui.label_dirt_container": "Dirt Container",
-      "block.spasm.dirt_container.description_0": "Stores only 1 thing"
+      "block.spasm.dirt_container.description_0": "Stores only 1 thing",
+      "item.spasm.wooden_dirt_shovel": "Wooden Dirt Shovel"
     }
   },
   "metadata": {
@@ -343,6 +392,10 @@
     "children": [
       {
         "name": "Dirt Age",
+        "children": []
+      },
+      {
+        "name": "Wood Age",
         "children": []
       }
     ]

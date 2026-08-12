@@ -26,6 +26,7 @@ public class SpasmModTabs {
 			tabData.accept(SpasmModItems.DIRT_STICK.get());
 			tabData.accept(SpasmModItems.DIRT_HOE.get());
 			tabData.accept(SpasmModItems.DIRT_SHOVEL.get());
+			tabData.accept(SpasmModItems.WOODEN_DIRT_SHOVEL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(SpasmModBlocks.STRIPPED_DIRT.get().asItem());
 		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {

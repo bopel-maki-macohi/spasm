@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "spasm:wooden_dirt_shovel",
     "spasm:dirt_shovel"
   ]
 }
