@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "a"
+  ],
+  "key": {
+    "a": "#minecraft:dirt"
+  },
+  "result": {
+    "id": "spasm:dirt_clump",
+    "count": 4
+  }
+}
