@@ -1,18 +1,33 @@
 {
   "variants": {
-    "facing=north": {
-      "model": "spasm:block/dirt_container"
+    "facing=north,empty=true": {
+      "model": "spasm:block/dirt_container_0"
     },
-    "facing=east": {
-      "model": "spasm:block/dirt_container",
+    "facing=north,empty=false": {
+      "model": "spasm:block/dirt_container_1"
+    },
+    "facing=east,empty=true": {
+      "model": "spasm:block/dirt_container_0",
       "y": 90
     },
-    "facing=south": {
-      "model": "spasm:block/dirt_container",
+    "facing=east,empty=false": {
+      "model": "spasm:block/dirt_container_1",
+      "y": 90
+    },
+    "facing=south,empty=true": {
+      "model": "spasm:block/dirt_container_0",
       "y": 180
     },
-    "facing=west": {
-      "model": "spasm:block/dirt_container",
+    "facing=south,empty=false": {
+      "model": "spasm:block/dirt_container_1",
+      "y": 180
+    },
+    "facing=west,empty=true": {
+      "model": "spasm:block/dirt_container_0",
+      "y": 270
+    },
+    "facing=west,empty=false": {
+      "model": "spasm:block/dirt_container_1",
       "y": 270
     }
   }

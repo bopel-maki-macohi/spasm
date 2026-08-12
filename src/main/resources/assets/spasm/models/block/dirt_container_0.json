@@ -1,0 +1,8 @@
+{
+  "parent": "spasm:custom/dirt_container",
+  "textures": {
+    "all": "spasm:block/stripped_dirt_v2",
+    "particle": "spasm:block/stripped_dirt_v2",
+    "2": "spasm:block/stripped_dirt_v2"
+  }
+}

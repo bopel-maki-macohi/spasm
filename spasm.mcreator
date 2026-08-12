@@ -240,9 +240,11 @@
       "registry_name": "dirt_container",
       "metadata": {
         "files": [
+          "src/main/resources/assets/spasm/models/block/dirt_container_0.json",
           "src/main/java/net/mcreator/spasm/block/DirtContainerBlock.java",
           "src/main/resources/data/spasm/loot_table/blocks/dirt_container.json",
           "src/main/resources/assets/spasm/models/block/dirt_container.json",
+          "src/main/resources/assets/spasm/models/block/dirt_container_1.json",
           "src/main/resources/assets/spasm/items/dirt_container.json",
           "src/main/java/net/mcreator/spasm/block/entity/DirtContainerBlockEntity.java",
           "src/main/resources/assets/spasm/models/item/dirt_container.json",
@@ -321,6 +323,37 @@
         ]
       },
       "path": "~/Wood Age"
+    },
+    {
+      "name": "DirtContainerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_container_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spasm/procedures/DirtContainerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
@@ -351,12 +384,12 @@
       "~WoodenDirtShovel@CUSTOM:WoodenDirtShovel",
       "~DirtShovel@CUSTOM:DirtShovel"
     ],
-    "BLOCKS:minecraft:mineable/shovel": [
-      "~DirtContainer@CUSTOM:DirtContainer"
-    ],
     "ITEMS:spasm:wooden_dirt_shovel_repair_items": [
       "~WoodenDirtShovel@Items.STICK",
       "~WoodenDirtShovel@CUSTOM:DirtClump"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~DirtContainer@CUSTOM:DirtContainer"
     ]
   },
   "tab_element_order": {},

@@ -6,6 +6,7 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.block.state.properties.EnumProperty;
+import net.minecraft.world.level.block.state.properties.BooleanProperty;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -20,6 +21,7 @@ import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.MenuProvider;
 import net.minecraft.world.InteractionResult;
 import net.minecraft.world.Containers;
+import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.network.chat.Component;
@@ -28,6 +30,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.mcreator.spasm.world.inventory.DirtContainerGUIMenu;
+import net.mcreator.spasm.procedures.DirtContainerOnTickUpdateProcedure;
 import net.mcreator.spasm.block.entity.DirtContainerBlockEntity;
 
 import java.util.function.Function;
@@ -36,11 +39,12 @@ import io.netty.buffer.Unpooled;
 
 public class DirtContainerBlock extends Block implements EntityBlock {
 	public static final EnumProperty<Direction> FACING = HorizontalDirectionalBlock.FACING;
+	public static final BooleanProperty EMPTY = BooleanProperty.create("empty");
 	private final Function<BlockState, VoxelShape> shapes = this.makeShapes();
 
 	public DirtContainerBlock(BlockBehaviour.Properties properties) {
 		super(properties.mapColor(MapColor.DIRT).sound(SoundType.GRAVEL).strength(0.75f).noOcclusion().isRedstoneConductor((bs, br, bp) -> false));
-		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
+		this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH).setValue(EMPTY, true));
 	}
 
 	private Function<BlockState, VoxelShape> makeShapes() {
@@ -77,7 +81,7 @@ public class DirtContainerBlock extends Block implements EntityBlock {
 	@Override
 	protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
 		super.createBlockStateDefinition(builder);
-		builder.add(FACING);
+		builder.add(FACING, EMPTY);
 	}
 
 	@Override
@@ -85,7 +89,7 @@ public class DirtContainerBlock extends Block implements EntityBlock {
 		BlockState state = super.getStateForPlacement(context);
 		if (state == null)
 			return null;
-		return state.setValue(FACING, context.getHorizontalDirection().getOpposite());
+		return state.setValue(FACING, context.getHorizontalDirection().getOpposite()).setValue(EMPTY, true);
 	}
 
 	public BlockState rotate(BlockState state, Rotation rot) {
@@ -94,6 +98,19 @@ public class DirtContainerBlock extends Block implements EntityBlock {
 
 	public BlockState mirror(BlockState state, Mirror mirrorIn) {
 		return state.rotate(mirrorIn.getRotation(state.getValue(FACING)));
+	}
+
+	@Override
+	public void onPlace(BlockState blockstate, Level world, BlockPos pos, BlockState oldState, boolean moving) {
+		super.onPlace(blockstate, world, pos, oldState, moving);
+		world.scheduleTick(pos, this, 1);
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		super.tick(blockstate, world, pos, random);
+		DirtContainerOnTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
+		world.scheduleTick(pos, this, 1);
 	}
 
 	@Override
