@@ -1,4 +1,7 @@
+- Added mod description
 - Modified `Dirt Stick`
     - Fixed Attack Speed being snails pace
     - Less efficient
     - Less fragile (from 8 in durability to 10)
+    - Right-clicking on grass or dirt blocks will have a chance of dropping wheat seeds and will not turn it into farmland
+    - Now considered a Multitool (axe, pickaxe, and sword)

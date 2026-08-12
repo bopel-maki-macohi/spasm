@@ -2,6 +2,6 @@
   "pack": {
     "min_format": 101.1,
     "max_format": 101.1,
-    "description": ""
+    "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn't have access to otherwise."
   }
 }

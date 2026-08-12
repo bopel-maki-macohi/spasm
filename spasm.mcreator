@@ -71,6 +71,41 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtStickRightclickedOnBlock",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_stick_rightclicked_on_block",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spasm/procedures/DirtStickRightclickedOnBlockProcedure.java"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
@@ -79,7 +114,13 @@
     "ITEMS:spasm:dirt_stick_repair_items": [
       "~DirtStick@CUSTOM:DirtClump"
     ],
-    "ITEMS:minecraft:shovels": [
+    "ITEMS:minecraft:pickaxes": [
+      "~DirtStick@CUSTOM:DirtStick"
+    ],
+    "ITEMS:minecraft:axes": [
+      "~DirtStick@CUSTOM:DirtStick"
+    ],
+    "ITEMS:minecraft:swords": [
       "~DirtStick@CUSTOM:DirtStick"
     ]
   },
@@ -112,6 +153,7 @@
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
     "version": "0.0.2",
+    "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn\u0027t have access to otherwise.",
     "author": "Maki",
     "websiteURL": "https://github.com/bopel-maki-macohi/spasm",
     "license": "All Rights Reserved",

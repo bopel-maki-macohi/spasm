@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "tool",
   "definition": {
-    "toolType": "Spade",
+    "toolType": "MultiTool",
     "renderType": 0,
     "blockingRenderType": 0,
     "texture": "dirt_stick",
@@ -33,6 +33,7 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false
+    "damageOnCrafting": false,
+    "onRightClickedOnBlock": "DirtStickRightclickedOnBlock"
   }
 }
