@@ -85,6 +85,10 @@
             "type": "blockstate"
           },
           {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
             "name": "x",
             "type": "number"
           },
@@ -536,7 +540,7 @@
   "workspaceSettings": {
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn\u0027t have access to otherwise.",
     "author": "Maki",
     "websiteURL": "https://github.com/bopel-maki-macohi/spasm",
