@@ -153,6 +153,20 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtHoeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_hoe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/dirt_hoe_recipe.json",
+          "src/main/resources/data/spasm/advancement/recipes/dirt_hoe_recipe.json"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
