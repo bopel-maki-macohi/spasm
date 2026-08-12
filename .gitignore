@@ -1,0 +1,14 @@
+.eclipse/
+.vscode/
+
+build/
+.mcreator/
+.gradle/
+gradle/
+run/
+
+build.gradle
+gradle.properties
+gradlew
+gradlew.bat
+mcreator.gradle
