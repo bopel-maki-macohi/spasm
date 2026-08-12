@@ -13,7 +13,6 @@ import net.minecraft.world.entity.item.ItemEntity;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.resources.Identifier;
-import net.minecraft.core.BlockPos;
 
 import net.mcreator.spasm.init.SpasmModItems;
 
@@ -32,7 +31,6 @@ public class DirtDropPebbleProcedure {
 
 	private static void execute(@Nullable Event event, LevelAccessor world, double x, double y, double z, BlockState blockstate) {
 		if (blockstate == Blocks.GRASS_BLOCK.defaultBlockState() || blockstate == Blocks.DIRT_PATH.defaultBlockState() || blockstate.is(BlockTags.create(Identifier.parse("minecraft:dirt")))) {
-			world.destroyBlock(BlockPos.containing(x, y, z), false);
 			if (Math.random() <= 0.005) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(SpasmModItems.PEBBLE.get()));
