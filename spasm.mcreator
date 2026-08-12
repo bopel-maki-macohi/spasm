@@ -169,64 +169,65 @@
       "path": "~/Dirt Age"
     },
     {
-      "name": "SapDirt",
-      "type": "block",
+      "name": "DirtShovel",
+      "type": "tool",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "sap_dirt",
+      "registry_name": "dirt_shovel",
       "metadata": {
         "files": [
-          "src/main/resources/assets/spasm/models/item/sap_dirt.json",
-          "src/main/resources/assets/spasm/models/block/sap_dirt.json",
-          "src/main/java/net/mcreator/spasm/block/SapDirtBlock.java",
-          "src/main/resources/assets/spasm/blockstates/sap_dirt.json",
-          "src/main/resources/data/spasm/loot_table/blocks/sap_dirt.json",
-          "src/main/resources/assets/spasm/items/sap_dirt.json"
+          "src/main/resources/assets/spasm/models/item/dirt_shovel.json",
+          "src/main/java/net/mcreator/spasm/item/DirtShovelItem.java",
+          "src/main/resources/assets/spasm/items/dirt_shovel.json"
         ]
       },
       "path": "~/Dirt Age"
     },
     {
-      "name": "BuriedSapDirt1",
-      "type": "structure",
+      "name": "DirtShovelBlockDestroyedWithTool",
+      "type": "procedure",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "buried_sap_dirt_1",
+      "registry_name": "dirt_shovel_block_destroyed_with_tool",
       "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
         "files": [
-          "src/main/resources/data/spasm/worldgen/template_pool/buried_sap_dirt_1.json",
-          "src/main/resources/data/spasm/worldgen/structure_set/buried_sap_dirt_1.json",
-          "src/main/resources/data/spasm/worldgen/structure/buried_sap_dirt_1.json"
+          "src/main/java/net/mcreator/spasm/procedures/DirtShovelBlockDestroyedWithToolProcedure.java"
         ]
       },
       "path": "~/Dirt Age"
     },
     {
-      "name": "BuriedSapDirt2",
-      "type": "structure",
+      "name": "DirtShovelRecipe",
+      "type": "recipe",
       "compiles": true,
       "locked_code": false,
-      "registry_name": "buried_sap_dirt_2",
+      "registry_name": "dirt_shovel_recipe",
       "metadata": {
         "files": [
-          "src/main/resources/data/spasm/worldgen/structure/buried_sap_dirt_2.json",
-          "src/main/resources/data/spasm/worldgen/structure_set/buried_sap_dirt_2.json",
-          "src/main/resources/data/spasm/worldgen/template_pool/buried_sap_dirt_2.json"
-        ]
-      },
-      "path": "~/Dirt Age"
-    },
-    {
-      "name": "BuriedSapDirt3",
-      "type": "structure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "buried_sap_dirt_3",
-      "metadata": {
-        "files": [
-          "src/main/resources/data/spasm/worldgen/structure_set/buried_sap_dirt_3.json",
-          "src/main/resources/data/spasm/worldgen/structure/buried_sap_dirt_3.json",
-          "src/main/resources/data/spasm/worldgen/template_pool/buried_sap_dirt_3.json"
+          "src/main/resources/data/spasm/advancement/recipes/dirt_shovel_recipe.json",
+          "src/main/resources/data/spasm/recipe/dirt_shovel_recipe.json"
         ]
       },
       "path": "~/Dirt Age"
@@ -252,6 +253,12 @@
     ],
     "ITEMS:minecraft:hoes": [
       "~DirtHoe@CUSTOM:DirtHoe"
+    ],
+    "ITEMS:spasm:dirt_shovel_repair_items": [
+      "~DirtShovel@CUSTOM:DirtClump"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~DirtShovel@CUSTOM:DirtShovel"
     ]
   },
   "tab_element_order": {},
@@ -261,7 +268,7 @@
       "item.spasm.dirt_stick": "Dirt Stick",
       "item.spasm.stripped_dirt": "Stripped Dirt",
       "item.spasm.dirt_hoe": "Dirt Hoe",
-      "item.spasm.sap_dirt": "Sap Dirt"
+      "item.spasm.dirt_shovel": "Dirt Shovel"
     }
   },
   "metadata": {
@@ -286,7 +293,7 @@
   "workspaceSettings": {
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn\u0027t have access to otherwise.",
     "author": "Maki",
     "websiteURL": "https://github.com/bopel-maki-macohi/spasm",

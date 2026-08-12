@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " a",
+    "b "
+  ],
+  "key": {
+    "a": "spasm:dirt_clump",
+    "b": "spasm:dirt_stick"
+  },
+  "result": {
+    "id": "spasm:dirt_shovel",
+    "count": 1
+  }
+}
