@@ -17,7 +17,7 @@
     "creativeTabs": [
       "TOOLS"
     ],
-    "efficiency": 1.0,
+    "efficiency": 10.0,
     "attackSpeed": 10.0,
     "enchantability": 2,
     "damageVsEntity": 1.0,

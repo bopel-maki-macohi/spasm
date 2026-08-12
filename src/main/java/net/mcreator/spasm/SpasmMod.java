@@ -22,6 +22,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.spasm.init.SpasmModTabs;
 import net.mcreator.spasm.init.SpasmModItems;
+import net.mcreator.spasm.init.SpasmModBlocks;
 
 import javax.annotation.Nullable;
 
@@ -49,6 +50,7 @@ public class SpasmMod {
 		// End of user code block mod constructor
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
+		SpasmModBlocks.REGISTRY.register(modEventBus);
 		SpasmModItems.REGISTRY.register(modEventBus);
 		SpasmModTabs.REGISTRY.register(modEventBus);
 		// Start of user code block mod init

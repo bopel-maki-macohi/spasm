@@ -1,7 +1,10 @@
+- Added Stripped Dirt
+    - Drops 4 Dirt Clump when destroyed
+    - Has gravity
 - Added mod description
 - Modified `Dirt Stick`
     - Fixed Attack Speed being snails pace
-    - Less efficient
+    - More efficient
     - Less fragile (from 8 in durability to 10)
-    - Right-clicking on grass or dirt blocks will have a chance of dropping wheat seeds and will not turn it into farmland
+    - Right-clicking on grass or any dirt block will have a high chance of dropping wheat seeds and will turn it into "Stripped Dirt"
     - Now considered a Multitool (axe, pickaxe, and sword)
