@@ -16,6 +16,7 @@
         - Note: you have to re-place the block for the model changing to start happening
 
 - Modified Dirt Stick
+    - More Damage (1 -> 5)
     - Less efficient (20 -> 15)
     
 - Added Wooden Dirt Stick

@@ -457,15 +457,9 @@
     "ITEMS:spasm:dirt_shovel_repair_items": [
       "~DirtShovel@CUSTOM:DirtClump"
     ],
-    "ITEMS:minecraft:pickaxes": [
-      "~DirtStick@CUSTOM:DirtStick"
-    ],
     "ITEMS:minecraft:axes": [
-      "~WoodenDirtAxe@CUSTOM:WoodenDirtAxe",
-      "~DirtStick@CUSTOM:DirtStick"
-    ],
-    "ITEMS:minecraft:swords": [
-      "~DirtStick@CUSTOM:DirtStick"
+      "~DirtStick@CUSTOM:DirtStick",
+      "~WoodenDirtAxe@CUSTOM:WoodenDirtAxe"
     ],
     "ITEMS:minecraft:hoes": [
       "~DirtHoe@CUSTOM:DirtHoe"
@@ -486,6 +480,12 @@
     "ITEMS:spasm:wooden_dirt_axe_repair_items": [
       "~WoodenDirtAxe@Items.STICK",
       "~WoodenDirtAxe@CUSTOM:DirtClump"
+    ],
+    "ITEMS:minecraft:pickaxes": [
+      "~DirtStick@CUSTOM:DirtStick"
+    ],
+    "ITEMS:minecraft:swords": [
+      "~DirtStick@CUSTOM:DirtStick"
     ]
   },
   "tab_element_order": {},
