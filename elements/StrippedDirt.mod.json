@@ -54,8 +54,8 @@
       "BUILDING_BLOCKS"
     ],
     "destroyTool": "Not specified",
-    "customDrop": "CUSTOM:DirtClump",
-    "dropAmount": 4,
+    "customDrop": "",
+    "dropAmount": 1,
     "xpAmountMin": 0,
     "xpAmountMax": 0,
     "useLootTableForDrops": false,
