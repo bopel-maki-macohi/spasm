@@ -6,7 +6,7 @@
     "recipeRetstackSize": 4,
     "group": "dirt_clump",
     "unlockingItems": [
-      "Blocks.DIRT"
+      "CUSTOM:StrippedDirt"
     ],
     "cookingBookCategory": "MISC",
     "xpReward": 0.0,
@@ -14,7 +14,7 @@
     "craftingBookCategory": "MISC",
     "recipeShapeless": false,
     "recipeSlots": [
-      "Blocks.DIRT",
+      "CUSTOM:StrippedDirt",
       "",
       "",
       "",
@@ -25,7 +25,7 @@
       ""
     ],
     "recipeReturnStack": "CUSTOM:DirtClump",
-    "name": "dirt_clump_recipe",
+    "name": "dirt_clump_recipe_alt",
     "namespace": "mod"
   }
 }

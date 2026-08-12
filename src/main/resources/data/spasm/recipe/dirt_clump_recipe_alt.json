@@ -6,7 +6,7 @@
     "a"
   ],
   "key": {
-    "a": "#minecraft:dirt"
+    "a": "spasm:stripped_dirt"
   },
   "result": {
     "id": "spasm:dirt_clump",

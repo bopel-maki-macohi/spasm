@@ -436,6 +436,20 @@
         ]
       },
       "path": "~/Wood Age"
+    },
+    {
+      "name": "DirtClumpRecipeAlt",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_clump_recipe_alt",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/dirt_clump_recipe_alt.json",
+          "src/main/resources/data/spasm/advancement/recipes/dirt_clump_recipe_alt.json"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
@@ -540,7 +554,7 @@
   "workspaceSettings": {
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn\u0027t have access to otherwise.",
     "author": "Maki",
     "websiteURL": "https://github.com/bopel-maki-macohi/spasm",

@@ -1,2 +1,1 @@
-- Modified Dirt Stick
-    - Now damaged when right-clicking grass and dirt blocks    
+- Stripped Dirt can now craft into 4 Dirt Clumps
