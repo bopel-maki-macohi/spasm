@@ -3,5 +3,8 @@
   "item.spasm.dirt_stick": "Dirt Stick",
   "item.spasm.stripped_dirt": "Stripped Dirt",
   "item.spasm.dirt_hoe": "Dirt Hoe",
-  "item.spasm.dirt_shovel": "Dirt Shovel"
+  "item.spasm.dirt_shovel": "Dirt Shovel",
+  "item.spasm.dirt_container": "Dirt Container",
+  "gui.spasm.dirt_container_gui.label_dirt_container": "Dirt Container",
+  "block.spasm.dirt_container.description_0": "Stores only 1 thing"
 }

@@ -231,6 +231,115 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtContainer",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_container",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spasm/block/DirtContainerBlock.java",
+          "src/main/resources/data/spasm/loot_table/blocks/dirt_container.json",
+          "src/main/resources/assets/spasm/models/block/dirt_container.json",
+          "src/main/resources/assets/spasm/items/dirt_container.json",
+          "src/main/java/net/mcreator/spasm/block/entity/DirtContainerBlockEntity.java",
+          "src/main/resources/assets/spasm/models/item/dirt_container.json",
+          "src/main/resources/assets/spasm/blockstates/dirt_container.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtContainerGUI",
+      "type": "gui",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_container_gui",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spasm/client/gui/DirtContainerGUIScreen.java",
+          "src/main/java/net/mcreator/spasm/world/inventory/DirtContainerGUIMenu.java"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtContainerRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_container_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/advancement/recipes/dirt_container_recipe.json",
+          "src/main/resources/data/spasm/recipe/dirt_container_recipe.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtContainerOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_container_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spasm/procedures/DirtContainerOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtContainerBlockDestroyed",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_container_block_destroyed",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spasm/procedures/DirtContainerBlockDestroyedProcedure.java"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
@@ -259,6 +368,9 @@
     ],
     "ITEMS:minecraft:shovels": [
       "~DirtShovel@CUSTOM:DirtShovel"
+    ],
+    "BLOCKS:minecraft:mineable/shovel": [
+      "~DirtContainer@CUSTOM:DirtContainer"
     ]
   },
   "tab_element_order": {},
@@ -268,12 +380,19 @@
       "item.spasm.dirt_stick": "Dirt Stick",
       "item.spasm.stripped_dirt": "Stripped Dirt",
       "item.spasm.dirt_hoe": "Dirt Hoe",
-      "item.spasm.dirt_shovel": "Dirt Shovel"
+      "item.spasm.dirt_shovel": "Dirt Shovel",
+      "item.spasm.dirt_container": "Dirt Container",
+      "gui.spasm.dirt_container_gui.label_dirt_container": "Dirt Container",
+      "block.spasm.dirt_container.description_0": "Stores only 1 thing"
     }
   },
   "metadata": {
     "files": [
+      "src/main/java/net/mcreator/spasm/init/SpasmModScreens.java",
+      "src/main/java/net/mcreator/spasm/network/MenuStateUpdateMessage.java",
+      "src/main/java/net/mcreator/spasm/init/SpasmModMenus.java",
       "src/main/java/net/mcreator/spasm/init/SpasmModBlocks.java",
+      "src/main/java/net/mcreator/spasm/init/SpasmModBlockEntities.java",
       "src/main/java/net/mcreator/spasm/init/SpasmModItems.java",
       "src/main/java/net/mcreator/spasm/init/SpasmModTabs.java",
       "src/main/resources/pack.mcmeta",

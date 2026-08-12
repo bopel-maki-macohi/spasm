@@ -21,8 +21,10 @@ import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.mcreator.spasm.init.SpasmModTabs;
+import net.mcreator.spasm.init.SpasmModMenus;
 import net.mcreator.spasm.init.SpasmModItems;
 import net.mcreator.spasm.init.SpasmModBlocks;
+import net.mcreator.spasm.init.SpasmModBlockEntities;
 
 import javax.annotation.Nullable;
 
@@ -51,8 +53,10 @@ public class SpasmMod {
 		NeoForge.EVENT_BUS.register(this);
 		modEventBus.addListener(this::registerNetworking);
 		SpasmModBlocks.REGISTRY.register(modEventBus);
+		SpasmModBlockEntities.REGISTRY.register(modEventBus);
 		SpasmModItems.REGISTRY.register(modEventBus);
 		SpasmModTabs.REGISTRY.register(modEventBus);
+		SpasmModMenus.REGISTRY.register(modEventBus);
 		// Start of user code block mod init
 		// End of user code block mod init
 	}

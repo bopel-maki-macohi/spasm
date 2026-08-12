@@ -1,0 +1,32 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:DirtStick",
+      "CUSTOM:DirtClump"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:DirtStick",
+      "CUSTOM:DirtStick",
+      "",
+      "CUSTOM:DirtClump",
+      "CUSTOM:DirtClump",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "recipeReturnStack": "CUSTOM:DirtContainer",
+    "name": "dirt_container_recipe",
+    "namespace": "mod"
+  }
+}

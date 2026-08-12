@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=north": {
+      "model": "spasm:block/dirt_container"
+    },
+    "facing=east": {
+      "model": "spasm:block/dirt_container",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "spasm:block/dirt_container",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spasm:block/dirt_container",
+      "y": 270
+    }
+  }
+}

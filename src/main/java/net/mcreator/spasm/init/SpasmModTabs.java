@@ -28,6 +28,8 @@ public class SpasmModTabs {
 			tabData.accept(SpasmModItems.DIRT_SHOVEL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(SpasmModBlocks.STRIPPED_DIRT.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.FUNCTIONAL_BLOCKS) {
+			tabData.accept(SpasmModBlocks.DIRT_CONTAINER.get().asItem());
 		}
 	}
 }
