@@ -15,4 +15,4 @@
 - Added Wooden Dirt Stick
     - Same as Dirt Stick besides the following:
         - Durability: 32
-        - Efficiency: 14
+        - Does not have a chance of dropping tree saplings when breaking grass or dirt blocks
