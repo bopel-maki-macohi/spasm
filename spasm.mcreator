@@ -498,7 +498,6 @@
       "item.spasm.dirt_shovel": "Dirt Shovel",
       "item.spasm.dirt_container": "Dirt Container",
       "gui.spasm.dirt_container_gui.label_dirt_container": "Dirt Container",
-      "block.spasm.dirt_container.description_0": "Stores only 1 thing",
       "item.spasm.wooden_dirt_shovel": "Wooden Dirt Shovel",
       "item.spasm.soaked_dirt": "Soaked Dirt",
       "subtitles.block.stripped_dirt.soaked": "Dirt gets soaked...",
