@@ -450,6 +450,99 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "Pebble",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "pebble",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spasm/item/PebbleItem.java",
+          "src/main/resources/assets/spasm/models/item/pebble.json",
+          "src/main/resources/assets/spasm/items/pebble.json"
+        ]
+      },
+      "path": "~/Pebble Age"
+    },
+    {
+      "name": "DirtDropPebble",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_drop_pebble",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "blockstate",
+            "type": "blockstate"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spasm/procedures/DirtDropPebbleProcedure.java"
+        ]
+      },
+      "path": "~/Pebble Age"
+    },
+    {
+      "name": "CobblestoneShovel",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_shovel",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/spasm/items/cobblestone_shovel.json",
+          "src/main/resources/assets/spasm/models/item/cobblestone_shovel.json",
+          "src/main/java/net/mcreator/spasm/item/CobblestoneShovelItem.java"
+        ]
+      },
+      "path": "~/Pebble Age"
+    },
+    {
+      "name": "CobblestoneShovelRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_shovel_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/cobblestone_shovel_recipe.json",
+          "src/main/resources/data/spasm/advancement/recipes/cobblestone_shovel_recipe.json"
+        ]
+      },
+      "path": "~/Pebble Age"
+    },
+    {
+      "name": "CobblestoneRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "cobblestone_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/advancement/recipes/cobblestone_recipe.json",
+          "src/main/resources/data/spasm/recipe/cobblestone_recipe.json"
+        ]
+      },
+      "path": "~/Pebble Age"
     }
   ],
   "variable_elements": [],
@@ -483,6 +576,7 @@
       "~DirtHoe@CUSTOM:DirtHoe"
     ],
     "ITEMS:minecraft:shovels": [
+      "~CobblestoneShovel@CUSTOM:CobblestoneShovel",
       "~WoodenDirtShovel@CUSTOM:WoodenDirtShovel",
       "~DirtShovel@CUSTOM:DirtShovel"
     ],
@@ -504,6 +598,11 @@
     ],
     "ITEMS:minecraft:swords": [
       "~DirtStick@CUSTOM:DirtStick"
+    ],
+    "ITEMS:spasm:cobblestone_shove_repair_items": [],
+    "ITEMS:spasm:cobblestone_shovel_repair_items": [
+      "~CobblestoneShovel@Blocks.COBBLESTONE",
+      "~CobblestoneShovel@CUSTOM:Pebble"
     ]
   },
   "tab_element_order": {},
@@ -519,7 +618,9 @@
       "item.spasm.wooden_dirt_shovel": "Wooden Dirt Shovel",
       "item.spasm.soaked_dirt": "Soaked Dirt",
       "subtitles.block.stripped_dirt.soaked": "Dirt gets soaked...",
-      "item.spasm.wooden_dirt_axe": "Wooden Dirt Shovel"
+      "item.spasm.wooden_dirt_axe": "Wooden Dirt Shovel",
+      "item.spasm.pebble": "Pebble",
+      "item.spasm.cobblestone_shovel": "Wooden Dirt Shovel"
     }
   },
   "metadata": {
@@ -548,13 +649,17 @@
       {
         "name": "Wood Age",
         "children": []
+      },
+      {
+        "name": "Pebble Age",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn\u0027t have access to otherwise.",
     "author": "Maki",
     "websiteURL": "https://github.com/bopel-maki-macohi/spasm",

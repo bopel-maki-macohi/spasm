@@ -22,12 +22,14 @@ public class SpasmModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(SpasmModItems.DIRT_CLUMP.get());
+			tabData.accept(SpasmModItems.PEBBLE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
 			tabData.accept(SpasmModItems.DIRT_STICK.get());
 			tabData.accept(SpasmModItems.DIRT_HOE.get());
 			tabData.accept(SpasmModItems.DIRT_SHOVEL.get());
 			tabData.accept(SpasmModItems.WOODEN_DIRT_SHOVEL.get());
 			tabData.accept(SpasmModItems.WOODEN_DIRT_AXE.get());
+			tabData.accept(SpasmModItems.COBBLESTONE_SHOVEL.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(SpasmModBlocks.STRIPPED_DIRT.get().asItem());
 			tabData.accept(SpasmModBlocks.SOAKED_DIRT.get().asItem());

@@ -1,0 +1,31 @@
+{
+  "_fv": 89,
+  "_type": "recipe",
+  "definition": {
+    "recipeType": "Crafting",
+    "recipeRetstackSize": 1,
+    "group": "",
+    "unlockingItems": [
+      "CUSTOM:Pebble"
+    ],
+    "cookingBookCategory": "MISC",
+    "xpReward": 0.0,
+    "cookingTime": 200,
+    "craftingBookCategory": "MISC",
+    "recipeShapeless": false,
+    "recipeSlots": [
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble",
+      "CUSTOM:Pebble"
+    ],
+    "recipeReturnStack": "Blocks.COBBLESTONE",
+    "name": "cobblestone_recipe",
+    "namespace": "mod"
+  }
+}
