@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "spasm:dirt_stick"
+    "spasm:dirt_stick",
+    "spasm:wooden_dirt_axe"
   ]
 }

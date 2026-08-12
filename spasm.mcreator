@@ -403,6 +403,35 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "WoodenDirtAxe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_dirt_axe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spasm/item/WoodenDirtAxeItem.java",
+          "src/main/resources/assets/spasm/items/wooden_dirt_axe.json",
+          "src/main/resources/assets/spasm/models/item/wooden_dirt_axe.json"
+        ]
+      },
+      "path": "~/Wood Age"
+    },
+    {
+      "name": "WoodenDirtAxeRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "wooden_dirt_axe_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/wooden_dirt_axe_recipe.json",
+          "src/main/resources/data/spasm/advancement/recipes/wooden_dirt_axe_recipe.json"
+        ]
+      },
+      "path": "~/Wood Age"
     }
   ],
   "variable_elements": [],
@@ -432,6 +461,7 @@
       "~DirtStick@CUSTOM:DirtStick"
     ],
     "ITEMS:minecraft:axes": [
+      "~WoodenDirtAxe@CUSTOM:WoodenDirtAxe",
       "~DirtStick@CUSTOM:DirtStick"
     ],
     "ITEMS:minecraft:swords": [
@@ -452,6 +482,10 @@
       "~StrippedDirt@CUSTOM:StrippedDirt",
       "~SoakedDirt@CUSTOM:SoakedDirt",
       "~DirtContainer@CUSTOM:DirtContainer"
+    ],
+    "ITEMS:spasm:wooden_dirt_axe_repair_items": [
+      "~WoodenDirtAxe@Items.STICK",
+      "~WoodenDirtAxe@CUSTOM:DirtClump"
     ]
   },
   "tab_element_order": {},
@@ -467,7 +501,8 @@
       "block.spasm.dirt_container.description_0": "Stores only 1 thing",
       "item.spasm.wooden_dirt_shovel": "Wooden Dirt Shovel",
       "item.spasm.soaked_dirt": "Soaked Dirt",
-      "subtitles.block.stripped_dirt.soaked": "Dirt gets soaked..."
+      "subtitles.block.stripped_dirt.soaked": "Dirt gets soaked...",
+      "item.spasm.wooden_dirt_axe": "Wooden Dirt Shovel"
     }
   },
   "metadata": {

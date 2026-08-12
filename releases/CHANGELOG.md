@@ -1,3 +1,8 @@
+- Added Wooden Dirt Axe
+    - Durability: 12
+    - Attack Speed: 2
+    - Very efficient
+
 - Added Soaked Dirt
     - Main breaking tool are Shovels
 

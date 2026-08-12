@@ -11,11 +11,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
-import net.mcreator.spasm.item.WoodenDirtShovelItem;
-import net.mcreator.spasm.item.DirtStickItem;
-import net.mcreator.spasm.item.DirtShovelItem;
-import net.mcreator.spasm.item.DirtHoeItem;
-import net.mcreator.spasm.item.DirtClumpItem;
+import net.mcreator.spasm.item.*;
 import net.mcreator.spasm.SpasmMod;
 
 import java.util.function.Function;
@@ -30,6 +26,7 @@ public class SpasmModItems {
 	public static final DeferredItem<Item> DIRT_CONTAINER;
 	public static final DeferredItem<Item> WOODEN_DIRT_SHOVEL;
 	public static final DeferredItem<Item> SOAKED_DIRT;
+	public static final DeferredItem<Item> WOODEN_DIRT_AXE;
 	static {
 		DIRT_CLUMP = register("dirt_clump", DirtClumpItem::new);
 		DIRT_STICK = register("dirt_stick", DirtStickItem::new);
@@ -39,6 +36,7 @@ public class SpasmModItems {
 		DIRT_CONTAINER = block(SpasmModBlocks.DIRT_CONTAINER);
 		WOODEN_DIRT_SHOVEL = register("wooden_dirt_shovel", WoodenDirtShovelItem::new);
 		SOAKED_DIRT = block(SpasmModBlocks.SOAKED_DIRT);
+		WOODEN_DIRT_AXE = register("wooden_dirt_axe", WoodenDirtAxeItem::new);
 	}
 
 	// Start of user code block custom items
