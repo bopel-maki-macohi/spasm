@@ -124,6 +124,21 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtHoe",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_hoe",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spasm/item/DirtHoeItem.java",
+          "src/main/resources/assets/spasm/items/dirt_hoe.json",
+          "src/main/resources/assets/spasm/models/item/dirt_hoe.json"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
@@ -131,6 +146,12 @@
   "tag_elements": {
     "ITEMS:spasm:dirt_stick_repair_items": [
       "~DirtStick@CUSTOM:DirtClump"
+    ],
+    "ITEMS:spasm:dirt_hoe_repair_items": [
+      "~DirtHoe@CUSTOM:DirtClump"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~DirtHoe@CUSTOM:DirtHoe"
     ],
     "ITEMS:minecraft:pickaxes": [
       "~DirtStick@CUSTOM:DirtStick"
@@ -147,7 +168,8 @@
     "en_us": {
       "item.spasm.dirt_clump": "Dirt Clump",
       "item.spasm.dirt_stick": "Dirt Stick",
-      "item.spasm.stripped_dirt": "Stripped Dirt"
+      "item.spasm.stripped_dirt": "Stripped Dirt",
+      "item.spasm.dirt_hoe": "Dirt Hoe"
     }
   },
   "metadata": {

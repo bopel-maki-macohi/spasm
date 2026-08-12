@@ -25,7 +25,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.spasm.procedures.DirtStickRightclickedOnBlockProcedure;
 
 public class DirtStickItem extends Item {
-	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 10, 10f, 0, 2, TagKey.create(Registries.ITEM, Identifier.parse("spasm:dirt_stick_repair_items")));
+	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 10, 10f, 0, 1, TagKey.create(Registries.ITEM, Identifier.parse("spasm:dirt_stick_repair_items")));
 
 	public DirtStickItem(Item.Properties properties) {
 		super(TOOL_MATERIAL.applyToolProperties(properties, BlockTags.MINEABLE_WITH_PICKAXE, 0f, 6f, 0)

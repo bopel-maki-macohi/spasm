@@ -2,14 +2,14 @@
   "_fv": 89,
   "_type": "tool",
   "definition": {
-    "toolType": "MultiTool",
+    "toolType": "Hoe",
     "renderType": 0,
     "blockingRenderType": 0,
-    "texture": "dirt_stick",
+    "texture": "dirt_hoe",
     "customModelName": "Normal",
     "blockingModelName": "Normal blocking",
     "guiTexture": "",
-    "name": "Dirt Stick",
+    "name": "Dirt Hoe",
     "rarity": "COMMON",
     "specialInformation": {
       "fixedValue": []
@@ -21,7 +21,7 @@
     "attackSpeed": 10.0,
     "enchantability": 1,
     "damageVsEntity": 1.0,
-    "usageCount": 10,
+    "usageCount": 4,
     "glowCondition": {
       "fixedValue": false
     },
@@ -33,7 +33,6 @@
     "blocksAffected": [],
     "attributeModifiers": [],
     "stayInGridWhenCrafting": false,
-    "damageOnCrafting": false,
-    "onRightClickedOnBlock": "DirtStickRightclickedOnBlock"
+    "damageOnCrafting": false
   }
 }

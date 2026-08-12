@@ -12,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.BlockItem;
 
 import net.mcreator.spasm.item.DirtStickItem;
+import net.mcreator.spasm.item.DirtHoeItem;
 import net.mcreator.spasm.item.DirtClumpItem;
 import net.mcreator.spasm.SpasmMod;
 
@@ -22,10 +23,12 @@ public class SpasmModItems {
 	public static final DeferredItem<Item> DIRT_CLUMP;
 	public static final DeferredItem<Item> DIRT_STICK;
 	public static final DeferredItem<Item> STRIPPED_DIRT;
+	public static final DeferredItem<Item> DIRT_HOE;
 	static {
 		DIRT_CLUMP = register("dirt_clump", DirtClumpItem::new);
 		DIRT_STICK = register("dirt_stick", DirtStickItem::new);
 		STRIPPED_DIRT = block(SpasmModBlocks.STRIPPED_DIRT);
+		DIRT_HOE = register("dirt_hoe", DirtHoeItem::new);
 	}
 
 	// Start of user code block custom items
