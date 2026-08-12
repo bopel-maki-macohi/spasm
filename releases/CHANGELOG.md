@@ -1,3 +1,4 @@
 - Added Dirt Shovel
-    - 6 Durability
+    - 12 Durability
     - Low chance of dropping an oak sapling from grass, grass path, or any dirt blocks
+    - Very efficient

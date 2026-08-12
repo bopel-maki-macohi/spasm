@@ -16,7 +16,7 @@ import net.minecraft.core.BlockPos;
 import net.mcreator.spasm.procedures.DirtShovelBlockDestroyedWithToolProcedure;
 
 public class DirtShovelItem extends ShovelItem {
-	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 4, 10f, 0, 1, TagKey.create(Registries.ITEM, Identifier.parse("spasm:dirt_shovel_repair_items")));
+	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 12, 20f, 0, 1, TagKey.create(Registries.ITEM, Identifier.parse("spasm:dirt_shovel_repair_items")));
 
 	public DirtShovelItem(Item.Properties properties) {
 		super(TOOL_MATERIAL, 0f, 6f, properties);
