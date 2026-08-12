@@ -1,7 +1,19 @@
 {
   "variants": {
-    "": {
+    "facing=north": {
       "model": "spasm:block/stripped_dirt"
+    },
+    "facing=east": {
+      "model": "spasm:block/stripped_dirt",
+      "y": 90
+    },
+    "facing=south": {
+      "model": "spasm:block/stripped_dirt",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "spasm:block/stripped_dirt",
+      "y": 270
     }
   }
 }

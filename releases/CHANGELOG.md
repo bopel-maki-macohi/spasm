@@ -1,21 +1,4 @@
-<details>
-<summary>Note</summary>
+## 0.0.3
 
-Moving onward, the patch version will increase for unreleased indev exports
-
-</details>
-
-- Added Dirt Hoe
-    - 15 Durability
-    - Same enchantability as books
-- Added Stripped Dirt
-    - Drops 4 Dirt Clump when destroyed
-    - Has gravity
-- Added mod description
-- Modified `Dirt Stick`
-    - Fixed Attack Speed being snails pace
-    - More efficient
-    - Less fragile (from 8 in durability to 10)
-    - Right-clicking on grass, grass path or any dirt block will have a high chance of dropping wheat seeds and will turn it into "Stripped Dirt"
-    - Now considered a Multitool (axe, pickaxe, and sword)
-    - Same enchantability as books
+- Stripped Dirt
+    - Changed roation mode
