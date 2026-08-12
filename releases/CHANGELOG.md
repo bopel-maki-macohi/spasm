@@ -1,4 +1,3 @@
-## 0.0.3
-
 - Stripped Dirt
     - Changed roation mode
+    - Craftable via 2 dirt clumps and 2 dirt sticks in diagonals
