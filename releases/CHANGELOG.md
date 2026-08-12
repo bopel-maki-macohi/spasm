@@ -1,4 +1,5 @@
 - Added Wooden Dirt Axe
+    - Efficiency: 15
     - Durability: 12
     - Attack Speed: 2
     - Very efficient
