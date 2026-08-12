@@ -1,0 +1,4 @@
+- Modified `Dirt Stick`
+    - Fixed Attack Speed being snails pace
+    - Less efficient
+    - Less fragile (from 8 in durability to 10)

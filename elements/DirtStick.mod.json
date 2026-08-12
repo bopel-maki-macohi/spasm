@@ -17,11 +17,11 @@
     "creativeTabs": [
       "TOOLS"
     ],
-    "efficiency": 4.0,
-    "attackSpeed": 0.1,
+    "efficiency": 1.0,
+    "attackSpeed": 10.0,
     "enchantability": 2,
     "damageVsEntity": 1.0,
-    "usageCount": 8,
+    "usageCount": 10,
     "glowCondition": {
       "fixedValue": false
     },

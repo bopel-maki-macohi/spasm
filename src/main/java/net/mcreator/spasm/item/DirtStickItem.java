@@ -9,9 +9,9 @@ import net.minecraft.resources.Identifier;
 import net.minecraft.core.registries.Registries;
 
 public class DirtStickItem extends ShovelItem {
-	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 8, 4f, 0, 2, TagKey.create(Registries.ITEM, Identifier.parse("spasm:dirt_stick_repair_items")));
+	private static final ToolMaterial TOOL_MATERIAL = new ToolMaterial(BlockTags.INCORRECT_FOR_WOODEN_TOOL, 10, 1f, 0, 2, TagKey.create(Registries.ITEM, Identifier.parse("spasm:dirt_stick_repair_items")));
 
 	public DirtStickItem(Item.Properties properties) {
-		super(TOOL_MATERIAL, 0f, -3.9f, properties);
+		super(TOOL_MATERIAL, 0f, 6f, properties);
 	}
 }
