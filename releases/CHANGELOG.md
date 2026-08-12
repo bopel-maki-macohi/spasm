@@ -6,5 +6,5 @@
     - Fixed Attack Speed being snails pace
     - More efficient
     - Less fragile (from 8 in durability to 10)
-    - Right-clicking on grass or any dirt block will have a high chance of dropping wheat seeds and will turn it into "Stripped Dirt"
+    - Right-clicking on grass, grass path or any dirt block will have a high chance of dropping wheat seeds and will turn it into "Stripped Dirt"
     - Now considered a Multitool (axe, pickaxe, and sword)

@@ -15,7 +15,7 @@ import net.mcreator.spasm.init.SpasmModBlocks;
 
 public class DirtStickRightclickedOnBlockProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z, BlockState blockstate) {
-		if (blockstate == Blocks.GRASS_BLOCK.defaultBlockState() || blockstate.is(BlockTags.create(Identifier.parse("minecraft:dirt")))) {
+		if (blockstate == Blocks.GRASS_BLOCK.defaultBlockState() || blockstate == Blocks.DIRT_PATH.defaultBlockState() || blockstate.is(BlockTags.create(Identifier.parse("minecraft:dirt")))) {
 			if (Math.random() >= 0.1) {
 				if (world instanceof ServerLevel _level) {
 					ItemEntity entityToSpawn = new ItemEntity(_level, x, y, z, new ItemStack(Items.WHEAT_SEEDS));
