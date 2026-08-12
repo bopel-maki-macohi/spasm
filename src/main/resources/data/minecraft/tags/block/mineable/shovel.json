@@ -1,6 +1,8 @@
 {
   "replace": false,
   "values": [
-    "spasm:dirt_container"
+    "spasm:dirt_container",
+    "spasm:soaked_dirt",
+    "spasm:stripped_dirt"
   ]
 }

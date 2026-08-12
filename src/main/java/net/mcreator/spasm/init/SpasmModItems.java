@@ -29,6 +29,7 @@ public class SpasmModItems {
 	public static final DeferredItem<Item> DIRT_SHOVEL;
 	public static final DeferredItem<Item> DIRT_CONTAINER;
 	public static final DeferredItem<Item> WOODEN_DIRT_SHOVEL;
+	public static final DeferredItem<Item> SOAKED_DIRT;
 	static {
 		DIRT_CLUMP = register("dirt_clump", DirtClumpItem::new);
 		DIRT_STICK = register("dirt_stick", DirtStickItem::new);
@@ -37,6 +38,7 @@ public class SpasmModItems {
 		DIRT_SHOVEL = register("dirt_shovel", DirtShovelItem::new);
 		DIRT_CONTAINER = block(SpasmModBlocks.DIRT_CONTAINER);
 		WOODEN_DIRT_SHOVEL = register("wooden_dirt_shovel", WoodenDirtShovelItem::new);
+		SOAKED_DIRT = block(SpasmModBlocks.SOAKED_DIRT);
 	}
 
 	// Start of user code block custom items

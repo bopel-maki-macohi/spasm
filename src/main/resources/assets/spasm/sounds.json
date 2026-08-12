@@ -1,0 +1,19 @@
+{
+  "block.stripped_dirt.soaked": {
+    "subtitle": "subtitles.block.stripped_dirt.soaked",
+    "sounds": [
+      {
+        "name": "spasm:convert1",
+        "stream": false
+      },
+      {
+        "name": "spasm:convert2",
+        "stream": false
+      },
+      {
+        "name": "spasm:convert3",
+        "stream": false
+      }
+    ]
+  }
+}

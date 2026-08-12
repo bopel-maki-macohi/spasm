@@ -1,3 +1,10 @@
+- Added Soaked Dirt
+    - Main breaking tool are Shovels
+
+- Modified Stripped Dirt
+    - Main breaking tool are now Shovels
+    - During rain if the block has access to the sky there is a chance for it to changed into Soaked Dirt
+
 - Modified Dirt Container
     - Now has a model change when it has stuff inside
         - Note: you have to re-place the block for the model changing to start happening
@@ -8,4 +15,4 @@
 - Added Wooden Dirt Stick
     - Same as Dirt Stick besides the following:
         - Durability: 32
-        - Efficiency: 12
+        - Efficiency: 14

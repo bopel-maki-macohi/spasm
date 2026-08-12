@@ -354,10 +354,70 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "SoakedDirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "soaked_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/spasm/models/block/soaked_dirt.json",
+          "src/main/resources/data/spasm/loot_table/blocks/soaked_dirt.json",
+          "src/main/resources/assets/spasm/items/soaked_dirt.json",
+          "src/main/resources/assets/spasm/models/item/soaked_dirt.json",
+          "src/main/java/net/mcreator/spasm/block/SoakedDirtBlock.java",
+          "src/main/resources/assets/spasm/blockstates/soaked_dirt.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "StrippedDirtOnTickUpdate",
+      "type": "procedure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "stripped_dirt_on_tick_update",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ],
+        "files": [
+          "src/main/java/net/mcreator/spasm/procedures/StrippedDirtOnTickUpdateProcedure.java"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
-  "sound_elements": [],
+  "sound_elements": [
+    {
+      "name": "block.stripped_dirt.soaked",
+      "files": [
+        "convert1",
+        "convert2",
+        "convert3"
+      ],
+      "category": "block",
+      "subtitle": "Dirt gets soaked..."
+    }
+  ],
   "tag_elements": {
     "ITEMS:spasm:dirt_stick_repair_items": [
       "~DirtStick@CUSTOM:DirtClump"
@@ -389,6 +449,8 @@
       "~WoodenDirtShovel@CUSTOM:DirtClump"
     ],
     "BLOCKS:minecraft:mineable/shovel": [
+      "~StrippedDirt@CUSTOM:StrippedDirt",
+      "~SoakedDirt@CUSTOM:SoakedDirt",
       "~DirtContainer@CUSTOM:DirtContainer"
     ]
   },
@@ -403,7 +465,9 @@
       "item.spasm.dirt_container": "Dirt Container",
       "gui.spasm.dirt_container_gui.label_dirt_container": "Dirt Container",
       "block.spasm.dirt_container.description_0": "Stores only 1 thing",
-      "item.spasm.wooden_dirt_shovel": "Wooden Dirt Shovel"
+      "item.spasm.wooden_dirt_shovel": "Wooden Dirt Shovel",
+      "item.spasm.soaked_dirt": "Soaked Dirt",
+      "subtitles.block.stripped_dirt.soaked": "Dirt gets soaked..."
     }
   },
   "metadata": {
@@ -415,8 +479,10 @@
       "src/main/java/net/mcreator/spasm/init/SpasmModBlockEntities.java",
       "src/main/java/net/mcreator/spasm/init/SpasmModItems.java",
       "src/main/java/net/mcreator/spasm/init/SpasmModTabs.java",
+      "src/main/resources/assets/spasm/sounds.json",
       "src/main/resources/pack.mcmeta",
       "src/main/resources/META-INF/neoforge.mods.toml",
+      "src/main/java/net/mcreator/spasm/init/SpasmModSounds.java",
       "src/main/java/net/mcreator/spasm/SpasmMod.java"
     ]
   },

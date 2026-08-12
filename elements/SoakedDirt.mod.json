@@ -2,7 +2,7 @@
   "_fv": 89,
   "_type": "block",
   "definition": {
-    "texture": "stripped_dirt_v2",
+    "texture": "soaked_dirt",
     "textureTop": "",
     "textureLeft": "",
     "textureFront": "",
@@ -10,7 +10,7 @@
     "textureBack": "",
     "renderType": 11,
     "customModelName": "Single texture",
-    "rotationMode": 1,
+    "rotationMode": 0,
     "enablePitch": false,
     "emissiveRendering": false,
     "displayFluidOverlay": false,
@@ -38,11 +38,11 @@
       }
     ],
     "customProperties": [],
-    "name": "Stripped Dirt",
+    "name": "Soaked Dirt",
     "specialInformation": {
       "fixedValue": []
     },
-    "hardness": 0.5,
+    "hardness": 0.75,
     "resistance": 0.5,
     "hasGravity": true,
     "isWaterloggable": false,
@@ -65,7 +65,7 @@
     "canRedstoneConnect": false,
     "hasCustomOpacity": false,
     "lightOpacity": 15,
-    "tickRate": 20,
+    "tickRate": 0,
     "tickRandomly": false,
     "isReplaceable": false,
     "canProvidePower": false,
@@ -121,7 +121,6 @@
     "isFluidTank": false,
     "fluidCapacity": 8000,
     "fluidRestrictions": [],
-    "onTickUpdate": "StrippedDirtOnTickUpdate",
     "generateFeature": false,
     "restrictionBiomes": [],
     "blocksToReplace": [
