@@ -6,6 +6,7 @@ build/
 .gradle/
 gradle/
 run/
+releases/
 
 build.gradle
 gradle.properties

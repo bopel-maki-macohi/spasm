@@ -42,15 +42,52 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtStick",
+      "type": "tool",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_stick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/mcreator/spasm/item/DirtStickItem.java",
+          "src/main/resources/assets/spasm/items/dirt_stick.json",
+          "src/main/resources/assets/spasm/models/item/dirt_stick.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "DirtStickRecipe",
+      "type": "recipe",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "dirt_stick_recipe",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/recipe/dirt_stick_recipe.json",
+          "src/main/resources/data/spasm/advancement/recipes/dirt_stick_recipe.json"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "ITEMS:spasm:dirt_stick_repair_items": [
+      "~DirtStick@CUSTOM:DirtClump"
+    ],
+    "ITEMS:minecraft:shovels": [
+      "~DirtStick@CUSTOM:DirtStick"
+    ]
+  },
   "tab_element_order": {},
   "language_map": {
     "en_us": {
-      "item.spasm.dirt_clump": "Dirt Clump"
+      "item.spasm.dirt_clump": "Dirt Clump",
+      "item.spasm.dirt_stick": "Dirt Stick"
     }
   },
   "metadata": {
@@ -74,9 +111,9 @@
   "workspaceSettings": {
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
-    "version": "1.0.0",
+    "version": "0.0.1",
     "author": "Maki",
-    "websiteURL": "https://mcreator.net",
+    "websiteURL": "https://github.com/bopel-maki-macohi/spasm",
     "license": "All Rights Reserved",
     "serverSideOnly": false,
     "requiredMods": [],

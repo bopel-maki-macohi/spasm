@@ -22,6 +22,8 @@ public class SpasmModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
 			tabData.accept(SpasmModItems.DIRT_CLUMP.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+			tabData.accept(SpasmModItems.DIRT_STICK.get());
 		}
 	}
 }

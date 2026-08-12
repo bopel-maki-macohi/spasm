@@ -4,9 +4,9 @@ license="All Rights Reserved"
 
 [[mods]]
 modId="spasm"
-version="1.0.0"
+version="0.0.1"
 displayName="Structureless Peaceful Assist Superflat Mod"
-displayURL="https://mcreator.net"
+displayURL="https://github.com/bopel-maki-macohi/spasm"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 authors="Maki"
 
