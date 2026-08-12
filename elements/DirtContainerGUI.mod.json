@@ -28,23 +28,6 @@
           "y": 70,
           "locked": false
         }
-      },
-      {
-        "type": "label",
-        "data": {
-          "name": "label_dirt_container",
-          "text": {
-            "fixedValue": "Dirt Container"
-          },
-          "color": {
-            "value": -12829636,
-            "falpha": 0.0
-          },
-          "hasShadow": false,
-          "x": 130,
-          "y": 41,
-          "locked": false
-        }
       }
     ],
     "gridSettings": {

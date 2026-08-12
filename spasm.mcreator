@@ -278,37 +278,6 @@
         ]
       },
       "path": "~/Dirt Age"
-    },
-    {
-      "name": "DirtContainerBlockDestroyed",
-      "type": "procedure",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "dirt_container_block_destroyed",
-      "metadata": {
-        "dependencies": [
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ],
-        "files": [
-          "src/main/java/net/mcreator/spasm/procedures/DirtContainerBlockDestroyedProcedure.java"
-        ]
-      },
-      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],

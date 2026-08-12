@@ -60,7 +60,6 @@ public class DirtContainerGUIScreen extends AbstractContainerScreen<DirtContaine
 
 	@Override
 	protected void extractLabels(GuiGraphicsExtractor guiGraphics, int mouseX, int mouseY) {
-		guiGraphics.text(this.font, Component.translatable("gui.spasm.dirt_container_gui.label_dirt_container"), 4, 4, -12829636, false);
 	}
 
 	@Override

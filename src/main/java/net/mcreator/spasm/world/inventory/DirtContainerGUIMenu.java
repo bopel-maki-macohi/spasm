@@ -36,7 +36,7 @@ public class DirtContainerGUIMenu extends AbstractContainerMenu implements Spasm
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 2)
+			if (!this.containsKey(key) && this.size() >= 1)
 				return null;
 			return super.put(key, value);
 		}
