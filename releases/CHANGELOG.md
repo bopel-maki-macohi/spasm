@@ -1,5 +1,5 @@
 - Added Dirt Container
-    - Stores 1 item or block stack only
+    - Stores 5 item or block stacks only
     - Drops content when broken
     - If renamed the name will be gone when destroying it again (I don't know why or how to fix it)
 

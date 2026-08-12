@@ -36,7 +36,7 @@ public class DirtContainerGUIMenu extends AbstractContainerMenu implements Spasm
 	public final Map<String, Object> menuState = new HashMap<>() {
 		@Override
 		public Object put(String key, Object value) {
-			if (!this.containsKey(key) && this.size() >= 1)
+			if (!this.containsKey(key) && this.size() >= 6)
 				return null;
 			return super.put(key, value);
 		}
@@ -56,7 +56,7 @@ public class DirtContainerGUIMenu extends AbstractContainerMenu implements Spasm
 		super(SpasmModMenus.DIRT_CONTAINER_GUI.get(), id);
 		this.entity = inv.player;
 		this.world = inv.player.level();
-		this.internal = new ItemStacksResourceHandler(1);
+		this.internal = new ItemStacksResourceHandler(5);
 		BlockPos pos = null;
 		if (extraData != null) {
 			pos = extraData.readBlockPos();
@@ -93,8 +93,28 @@ public class DirtContainerGUIMenu extends AbstractContainerMenu implements Spasm
 				}
 			}
 		}
-		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 80, 34) {
+		this.customSlots.put(0, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 0, 44, 34) {
 			private final int slot = 0;
+			private int x = DirtContainerGUIMenu.this.x;
+			private int y = DirtContainerGUIMenu.this.y;
+		}));
+		this.customSlots.put(1, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 1, 62, 34) {
+			private final int slot = 1;
+			private int x = DirtContainerGUIMenu.this.x;
+			private int y = DirtContainerGUIMenu.this.y;
+		}));
+		this.customSlots.put(2, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 2, 80, 34) {
+			private final int slot = 2;
+			private int x = DirtContainerGUIMenu.this.x;
+			private int y = DirtContainerGUIMenu.this.y;
+		}));
+		this.customSlots.put(3, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 3, 98, 34) {
+			private final int slot = 3;
+			private int x = DirtContainerGUIMenu.this.x;
+			private int y = DirtContainerGUIMenu.this.y;
+		}));
+		this.customSlots.put(4, this.addSlot(new ResourceHandlerSlot(internal, this::setItemInSlot, 4, 116, 34) {
+			private final int slot = 4;
 			private int x = DirtContainerGUIMenu.this.x;
 			private int y = DirtContainerGUIMenu.this.y;
 		}));
@@ -141,16 +161,16 @@ public class DirtContainerGUIMenu extends AbstractContainerMenu implements Spasm
 		if (slot != null && slot.hasItem()) {
 			ItemStack itemstack1 = slot.getItem();
 			itemstack = itemstack1.copy();
-			if (index < 1) {
-				if (!this.moveItemStackTo(itemstack1, 1, this.slots.size(), true))
+			if (index < 5) {
+				if (!this.moveItemStackTo(itemstack1, 5, this.slots.size(), true))
 					return ItemStack.EMPTY;
 				slot.onQuickCraft(itemstack1, itemstack);
-			} else if (!this.moveItemStackTo(itemstack1, 0, 1, false)) {
-				if (index < 1 + 27) {
-					if (!this.moveItemStackTo(itemstack1, 1 + 27, this.slots.size(), true))
+			} else if (!this.moveItemStackTo(itemstack1, 0, 5, false)) {
+				if (index < 5 + 27) {
+					if (!this.moveItemStackTo(itemstack1, 5 + 27, this.slots.size(), true))
 						return ItemStack.EMPTY;
 				} else {
-					if (!this.moveItemStackTo(itemstack1, 1, 1 + 27, false))
+					if (!this.moveItemStackTo(itemstack1, 5, 5 + 27, false))
 						return ItemStack.EMPTY;
 				}
 				return ItemStack.EMPTY;

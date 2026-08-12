@@ -40,9 +40,7 @@
     "customProperties": [],
     "name": "Dirt Container",
     "specialInformation": {
-      "fixedValue": [
-        "Stores only 1 thing"
-      ]
+      "fixedValue": []
     },
     "hardness": 0.75,
     "resistance": 0.75,
@@ -110,7 +108,7 @@
     "hasInventory": true,
     "guiBoundTo": "DirtContainerGUI",
     "openGUIOnRightClick": true,
-    "inventorySize": 1,
+    "inventorySize": 5,
     "inventoryStackSize": 64,
     "inventoryDropWhenDestroyed": true,
     "inventoryComparatorPower": true,

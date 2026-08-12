@@ -15,7 +15,6 @@ import net.mcreator.spasm.item.DirtStickItem;
 import net.mcreator.spasm.item.DirtShovelItem;
 import net.mcreator.spasm.item.DirtHoeItem;
 import net.mcreator.spasm.item.DirtClumpItem;
-import net.mcreator.spasm.block.DirtContainerBlock;
 import net.mcreator.spasm.SpasmMod;
 
 import java.util.function.Function;
@@ -34,7 +33,7 @@ public class SpasmModItems {
 		STRIPPED_DIRT = block(SpasmModBlocks.STRIPPED_DIRT);
 		DIRT_HOE = register("dirt_hoe", DirtHoeItem::new);
 		DIRT_SHOVEL = register("dirt_shovel", DirtShovelItem::new);
-		DIRT_CONTAINER = register("dirt_container", DirtContainerBlock.Item::new);
+		DIRT_CONTAINER = block(SpasmModBlocks.DIRT_CONTAINER);
 	}
 
 	// Start of user code block custom items

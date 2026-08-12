@@ -28,7 +28,7 @@ import java.util.stream.IntStream;
 import io.netty.buffer.Unpooled;
 
 public class DirtContainerBlockEntity extends RandomizableContainerBlockEntity implements WorldlyContainer {
-	private NonNullList<ItemStack> stacks = NonNullList.withSize(1, ItemStack.EMPTY);
+	private NonNullList<ItemStack> stacks = NonNullList.withSize(5, ItemStack.EMPTY);
 
 	public DirtContainerBlockEntity(BlockPos position, BlockState state) {
 		super(SpasmModBlockEntities.DIRT_CONTAINER.get(), position, state);
