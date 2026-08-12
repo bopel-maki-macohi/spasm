@@ -167,6 +167,69 @@
         ]
       },
       "path": "~/Dirt Age"
+    },
+    {
+      "name": "SapDirt",
+      "type": "block",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "sap_dirt",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/spasm/models/item/sap_dirt.json",
+          "src/main/resources/assets/spasm/models/block/sap_dirt.json",
+          "src/main/java/net/mcreator/spasm/block/SapDirtBlock.java",
+          "src/main/resources/assets/spasm/blockstates/sap_dirt.json",
+          "src/main/resources/data/spasm/loot_table/blocks/sap_dirt.json",
+          "src/main/resources/assets/spasm/items/sap_dirt.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "BuriedSapDirt1",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buried_sap_dirt_1",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/worldgen/template_pool/buried_sap_dirt_1.json",
+          "src/main/resources/data/spasm/worldgen/structure_set/buried_sap_dirt_1.json",
+          "src/main/resources/data/spasm/worldgen/structure/buried_sap_dirt_1.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "BuriedSapDirt2",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buried_sap_dirt_2",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/worldgen/structure/buried_sap_dirt_2.json",
+          "src/main/resources/data/spasm/worldgen/structure_set/buried_sap_dirt_2.json",
+          "src/main/resources/data/spasm/worldgen/template_pool/buried_sap_dirt_2.json"
+        ]
+      },
+      "path": "~/Dirt Age"
+    },
+    {
+      "name": "BuriedSapDirt3",
+      "type": "structure",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "buried_sap_dirt_3",
+      "metadata": {
+        "files": [
+          "src/main/resources/data/spasm/worldgen/structure_set/buried_sap_dirt_3.json",
+          "src/main/resources/data/spasm/worldgen/structure/buried_sap_dirt_3.json",
+          "src/main/resources/data/spasm/worldgen/template_pool/buried_sap_dirt_3.json"
+        ]
+      },
+      "path": "~/Dirt Age"
     }
   ],
   "variable_elements": [],
@@ -197,7 +260,8 @@
       "item.spasm.dirt_clump": "Dirt Clump",
       "item.spasm.dirt_stick": "Dirt Stick",
       "item.spasm.stripped_dirt": "Stripped Dirt",
-      "item.spasm.dirt_hoe": "Dirt Hoe"
+      "item.spasm.dirt_hoe": "Dirt Hoe",
+      "item.spasm.sap_dirt": "Sap Dirt"
     }
   },
   "metadata": {

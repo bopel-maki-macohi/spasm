@@ -24,11 +24,13 @@ public class SpasmModItems {
 	public static final DeferredItem<Item> DIRT_STICK;
 	public static final DeferredItem<Item> STRIPPED_DIRT;
 	public static final DeferredItem<Item> DIRT_HOE;
+	public static final DeferredItem<Item> SAP_DIRT;
 	static {
 		DIRT_CLUMP = register("dirt_clump", DirtClumpItem::new);
 		DIRT_STICK = register("dirt_stick", DirtStickItem::new);
 		STRIPPED_DIRT = block(SpasmModBlocks.STRIPPED_DIRT);
 		DIRT_HOE = register("dirt_hoe", DirtHoeItem::new);
+		SAP_DIRT = block(SpasmModBlocks.SAP_DIRT);
 	}
 
 	// Start of user code block custom items

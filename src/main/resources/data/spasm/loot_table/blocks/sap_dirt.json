@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "random_sequence": "spasm:blocks/sap_dirt",
+  "pools": [
+    {
+      "rolls": 1.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "spasm:dirt_clump",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": 6
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

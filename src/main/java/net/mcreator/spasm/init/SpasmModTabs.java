@@ -27,6 +27,8 @@ public class SpasmModTabs {
 			tabData.accept(SpasmModItems.DIRT_HOE.get());
 		} else if (tabData.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
 			tabData.accept(SpasmModBlocks.STRIPPED_DIRT.get().asItem());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(SpasmModBlocks.SAP_DIRT.get().asItem());
 		}
 	}
 }
