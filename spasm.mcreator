@@ -150,9 +150,6 @@
     "ITEMS:spasm:dirt_hoe_repair_items": [
       "~DirtHoe@CUSTOM:DirtClump"
     ],
-    "ITEMS:minecraft:hoes": [
-      "~DirtHoe@CUSTOM:DirtHoe"
-    ],
     "ITEMS:minecraft:pickaxes": [
       "~DirtStick@CUSTOM:DirtStick"
     ],
@@ -161,6 +158,9 @@
     ],
     "ITEMS:minecraft:swords": [
       "~DirtStick@CUSTOM:DirtStick"
+    ],
+    "ITEMS:minecraft:hoes": [
+      "~DirtHoe@CUSTOM:DirtHoe"
     ]
   },
   "tab_element_order": {},

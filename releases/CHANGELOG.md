@@ -1,3 +1,10 @@
+<details>
+<summary>Note</summary>
+
+Moving onward, the patch version will increase for unreleased indev exports
+
+</details>
+
 - Added Dirt Hoe
     - 15 Durability
     - Same enchantability as books
