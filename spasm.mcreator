@@ -289,6 +289,9 @@
     "ITEMS:spasm:dirt_hoe_repair_items": [
       "~DirtHoe@CUSTOM:DirtClump"
     ],
+    "ITEMS:spasm:dirt_shovel_repair_items": [
+      "~DirtShovel@CUSTOM:DirtClump"
+    ],
     "ITEMS:minecraft:pickaxes": [
       "~DirtStick@CUSTOM:DirtStick"
     ],
@@ -300,9 +303,6 @@
     ],
     "ITEMS:minecraft:hoes": [
       "~DirtHoe@CUSTOM:DirtHoe"
-    ],
-    "ITEMS:spasm:dirt_shovel_repair_items": [
-      "~DirtShovel@CUSTOM:DirtClump"
     ],
     "ITEMS:minecraft:shovels": [
       "~DirtShovel@CUSTOM:DirtShovel"
@@ -350,7 +350,7 @@
   "workspaceSettings": {
     "modid": "spasm",
     "modName": "Structureless Peaceful Assist Superflat Mod",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "This is a project to help players in structureless peaceful superflat worlds, giving them access to items they wouldn\u0027t have access to otherwise.",
     "author": "Maki",
     "websiteURL": "https://github.com/bopel-maki-macohi/spasm",
