@@ -1,3 +1,3 @@
 - Changed Stripped Dirt
-    - Performs "Soaking Checks" more often
+    - Performs "Soaking Checks" on the random client display  tick
     - Doesn't need to see the sky to be converted into Soaked Dirt anymore
