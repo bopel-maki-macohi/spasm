@@ -17,7 +17,7 @@ import net.mcreator.spasm.init.SpasmModBlocks;
 
 public class StrippedDirtOnTickUpdateProcedure {
 	public static void execute(LevelAccessor world, double x, double y, double z) {
-		if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z)) && world instanceof Level _lvl1 && _lvl1.isRaining()) {
+		if (world instanceof Level _lvl0 && _lvl0.isRaining()) {
 			if (Math.random() < 0.05) {
 				if (world instanceof Level _level) {
 					if (!_level.isClientSide()) {

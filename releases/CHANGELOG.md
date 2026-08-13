@@ -1,9 +1,3 @@
-- Added Cobblestone Shovel
-    - Same as Wooden Dirt Shovel except:
-        - More durability
-        - 2 in enchantability
-
-- Dirt has a random change of dropping a pebble
-
-- Added Pebble
-    - 9 craft into a block of cobblestone
+- Changed Stripped Dirt
+    - Performs "Soaking Checks" more often
+    - Doesn't need to see the sky to be converted into Soaked Dirt anymore
